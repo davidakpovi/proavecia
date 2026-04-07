@@ -13,14 +13,18 @@
   <meta property="og:description" content="Maîtrisez ChatGPT, Claude et Gemini avec un formateur certifié Google AI. Cours en ligne sur-mesure pour booster votre carrière." />
   <meta property="og:url" content="https://davidakpovi.github.io/proavecia/" />
   <meta property="og:locale" content="fr_FR" />
+  <meta property="og:image" content="https://davidakpovi.github.io/proavecia/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter/X Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="ProAvecIA – Formateur IA pour Professionnels" />
   <meta name="twitter:description" content="Maîtrisez ChatGPT, Claude et Gemini avec un formateur certifié Google AI." />
+  <meta name="twitter:image" content="https://davidakpovi.github.io/proavecia/og-image.png" />
 
   <!-- Favicon emoji fallback -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23B5673E'/><text x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='bold' text-anchor='middle' fill='white'>IA</text></svg>" />
     <!-- Google Analytics RGPD-compliant -->
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -423,6 +427,27 @@
 
     .tarif-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; font-weight: 300; }
 
+    .tarif-btn {
+      display: block;
+      margin-top: 1.4rem;
+      text-align: center;
+      padding: 0.65rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1.5px solid var(--clay);
+      color: var(--terracotta);
+      transition: all 0.2s;
+    }
+    .tarif-btn:hover { background: var(--terracotta); color: white; }
+    .tarif-card.featured .tarif-btn {
+      background: white;
+      color: var(--terracotta);
+      border-color: white;
+    }
+    .tarif-card.featured .tarif-btn:hover { background: var(--soft); }
+
     /* CONTACT */
     .contact-wrap {
       max-width: 600px;
@@ -510,6 +535,7 @@
     .cert-card.google2::after    { background: linear-gradient(90deg, #34A853, #4285F4); }
     .cert-card.vanderbilt::after { background: linear-gradient(90deg, #866D4B, #CFB991); }
     .cert-card.oracle::after     { background: linear-gradient(90deg, #F80000, #FF6B35); }
+    .cert-card.aicerts::after    { background: linear-gradient(90deg, #866D4B, #D4A853); }
 
     .cert-logo { font-size: 1.8rem; }
 
@@ -723,9 +749,9 @@
       <a href="#services" class="btn-secondary" onclick="trackEvent('cta_click', 'Découvrir les services', 'Hero')">Découvrir les services</a>
     </div>
     <div class="hero-stats">
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">Certifications</span></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Outils maîtrisés</span></div>
       <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Cas concrets</span></div>
-      <div class="stat"><span class="stat-num">1h</span><span class="stat-label">Première séance</span></div>
-      <div class="stat"><span class="stat-num">−20%</span><span class="stat-label">Sur les packs</span></div>
     </div>
   </div>
 </section>
@@ -820,6 +846,11 @@
       <div class="tarif-price">45€</div>
       <div class="tarif-unit">/ heure</div>
       <p>Idéal pour commencer et évaluer si la formule vous convient.</p>
+      <a class="tarif-btn"
+         href="mailto:davidakpovi@gmail.com?subject=Demande%20S%C3%A9ance%20unique%20%2845%E2%82%AC%2Fh%29%20%E2%80%94%20ProAvecIA&body=Bonjour%20David%2C%0A%0AJe%20souhaite%20r%C3%A9server%20une%20s%C3%A9ance%20unique%20%C3%A0%2045%E2%82%AC%2Fh.%0A%0AMon%20pr%C3%A9nom%20%3A%20%5B...%5D%0AMon%20m%C3%A9tier%20%3A%20%5B...%5D%0AMon%20objectif%20%3A%20%5B...%5D%0AMes%20disponibilit%C3%A9s%20%3A%20%5B...%5D%0A%0AMerci%20!"
+         onclick="trackEvent('tarif_click', 'Séance unique', 'Tarifs')">
+        Choisir cette formule →
+      </a>
     </div>
     <div class="tarif-card featured">
       <span class="tarif-badge">⭐ Populaire</span>
@@ -827,6 +858,11 @@
       <div class="tarif-price">200€</div>
       <div class="tarif-unit">soit 40€/h · −11%</div>
       <p>Le format idéal pour progresser rapidement sur vos cas concrets.</p>
+      <a class="tarif-btn"
+         href="mailto:davidakpovi@gmail.com?subject=Demande%20Pack%205h%20%28200%E2%82%AC%29%20%E2%80%94%20ProAvecIA&body=Bonjour%20David%2C%0A%0AJe%20souhaite%20r%C3%A9server%20le%20Pack%205h%20%C3%A0%20200%E2%82%AC.%0A%0AMon%20pr%C3%A9nom%20%3A%20%5B...%5D%0AMon%20m%C3%A9tier%20%3A%20%5B...%5D%0AMon%20objectif%20%3A%20%5B...%5D%0AMes%20disponibilit%C3%A9s%20%3A%20%5B...%5D%0A%0AMerci%20!"
+         onclick="trackEvent('tarif_click', 'Pack 5h', 'Tarifs')">
+        Choisir cette formule →
+      </a>
     </div>
     <div class="tarif-card">
       <span class="tarif-badge">Engagement</span>
@@ -834,6 +870,11 @@
       <div class="tarif-price">350€</div>
       <div class="tarif-unit">soit 35€/h · −22%</div>
       <p>Pour une montée en compétence complète et durable.</p>
+      <a class="tarif-btn"
+         href="mailto:davidakpovi@gmail.com?subject=Demande%20Pack%2010h%20%28350%E2%82%AC%29%20%E2%80%94%20ProAvecIA&body=Bonjour%20David%2C%0A%0AJe%20souhaite%20r%C3%A9server%20le%20Pack%2010h%20%C3%A0%20350%E2%82%AC.%0A%0AMon%20pr%C3%A9nom%20%3A%20%5B...%5D%0AMon%20m%C3%A9tier%20%3A%20%5B...%5D%0AMon%20objectif%20%3A%20%5B...%5D%0AMes%20disponibilit%C3%A9s%20%3A%20%5B...%5D%0A%0AMerci%20!"
+         onclick="trackEvent('tarif_click', 'Pack 10h', 'Tarifs')">
+        Choisir cette formule →
+      </a>
     </div>
   </div>
 </section>
@@ -842,7 +883,7 @@
 <section class="certifications" id="certifications">
   <div class="section-label">Certifications</div>
   <h2>Une expertise <em>reconnue</em></h2>
-  <p class="section-sub">Des formations certifiées par Google, Vanderbilt University et Oracle — pour vous garantir un enseignement rigoureux et à jour.</p>
+  <p class="section-sub">Des formations certifiées par Google, Vanderbilt University, Oracle et AI CERTs — pour vous garantir un enseignement rigoureux et à jour.</p>
   <div class="certs-grid">
 
     <div class="cert-card google">
@@ -910,6 +951,21 @@
       </div>
     </div>
 
+    <div class="cert-card" style="--cert-color: #866D4B;">
+      <div class="cert-logo">🤖</div>
+      <div class="cert-issuer">AI CERTs · Coursera</div>
+      <div class="cert-name">AI for Vibe Coding</div>
+      <div class="cert-courses">
+        <span class="cert-pill">Vibe Coding</span>
+        <span class="cert-pill">AI & Dev</span>
+        <span class="cert-pill">No-code AI</span>
+      </div>
+      <div class="cert-meta">
+        <span class="cert-date">Mars 2026</span>
+        <a class="cert-verify" href="https://coursera.org/verify/X7JKOYOJUA3W" target="_blank" onclick="trackEvent('cert_click', 'AI for Vibe Coding', 'Certifications')">Vérifier ↗</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -925,11 +981,7 @@
       Décrivez-moi votre situation, votre métier et vos objectifs.<br/>
       Je vous réponds sous 24h.
     </p>
-    <a id="mailto-btn"
-       href="mailto:davidakpovi@gmail.com?subject=Demande%20de%20formation%20IA%20—%20ProAvecIA&body=Bonjour%20David%2C%0A%0AJe%20souhaite%20une%20formation%20personnalis%C3%A9e%20sur%20l%E2%80%99IA.%0A%0AMon%20pr%C3%A9nom%20%3A%20%5B...%5D%0AMon%20m%C3%A9tier%20%3A%20%5B...%5D%0AMon%20objectif%20%3A%20%5B...%5D%0AMon%20niveau%20%3A%20%5B...%5D%0AMes%20disponibilit%C3%A9s%20%3A%20%5B...%5D%0A%0AMerci%20!"
-       class="btn-primary"
-       onclick="trackMailtoClick()"
-       style="display:inline-block; font-size:1.05rem; padding:1rem 2.5rem;">
+    <a id="mailto-btn" href="/cdn-cgi/l/email-protection#e28683948b868389928d948ba2858f838b8ecc818d8fdd91978088878196dfa6878f838c8687c7d0d28687c7d0d2848d908f83968b8d8cc7d0d2aba3c7d0d2006276c7d0d2b2908da3948781aba3c4808d869bdfa08d8c888d9790c7d0d2a683948b86c7d0a1c7d2a3c7d2a3a887c7d0d2918d978a838b9687c7d0d2978c87c7d0d2848d908f83968b8d8cc7d0d2928790918d8c8c838e8b91c7a1d1c7a3db87c7d0d2919790c7d0d28ec7a7d0c7dad2c7dbdbaba3ccc7d2a3c7d2a3af8d8cc7d0d29290c7a1d1c7a3db8c8d8fc7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8d8cc7d0d28fc7a1d1c7a3db968b8790c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8d8cc7d0d28d80888781968b84c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8d8cc7d0d28c8b94878397c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8791c7d0d2868b91928d8c8b808b8e8b96c7a1d1c7a3db91c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3c7d2a3af8790818bc7d0d2c3" class="btn-primary" onclick="trackMailtoClick()" style="display:inline-block; font-size:1.05rem; padding:1rem 2.5rem;">
       ✉️ M'écrire un email
     </a>
     <p style="margin-top:1.2rem; font-size:0.82rem; color:var(--muted);">
@@ -957,7 +1009,7 @@
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const GA_ID = 'G-S13LFE4MDQ';
 
   /* ── Chargement GA4 après consentement ── */
@@ -1054,20 +1106,4 @@
   document.querySelectorAll('nav ul a').forEach(a => {
     a.addEventListener('click', () => {
       document.querySelector('nav ul').classList.remove('open');
-      document.getElementById('hamburger').classList.remove('open');
-    });
-  });
-
-  /* ── Init au chargement ── */
-  window.addEventListener('DOMContentLoaded', function() {
-    const consent = localStorage.getItem('cookie_consent');
-    if (consent === 'accepted') {
-      document.getElementById('cookie-banner').classList.add('hidden');
-      loadGA();
-    } else if (consent === 'refused') {
-      document.getElementById('cookie-banner').classList.add('hidden');
-    }
-  });
-</script>
-</body>
-</html>
+      document.getElemen
