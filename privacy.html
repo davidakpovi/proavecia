@@ -7,131 +7,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --sand: #F5EFE6;
-      --warm-white: #FDFAF5;
-      --clay: #C4896A;
-      --terracotta: #B5673E;
-      --deep: #2C2416;
-      --muted: #7A6A56;
-      --accent: #E8A87C;
-      --soft: #EDE3D8;
+      --sand: #F5EFE6; --warm-white: #FDFAF5; --clay: #C4896A;
+      --terracotta: #B5673E; --deep: #2C2416; --muted: #7A6A56;
+      --accent: #E8A87C; --soft: #EDE3D8;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--warm-white);
-      color: var(--deep);
-      line-height: 1.8;
-    }
-
-    header {
-      background: var(--deep);
-      padding: 1.4rem 5%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      color: white;
-      text-decoration: none;
-    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--deep); line-height: 1.8; }
+    header { background: var(--deep); padding: 1.4rem 5%; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: white; text-decoration: none; }
     .logo span { font-style: italic; color: var(--accent); }
-
-    .back-link {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.6);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .back-link { font-size: 0.85rem; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
     .back-link:hover { color: var(--accent); }
-
-    main {
-      max-width: 720px;
-      margin: 4rem auto;
-      padding: 0 5%;
-    }
-
-    .page-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--clay);
-      font-weight: 500;
-      margin-bottom: 0.8rem;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      color: var(--deep);
-      line-height: 1.2;
-      margin-bottom: 0.5rem;
-    }
-
-    .update-date {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 3rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid rgba(196,137,106,0.2);
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
-      color: var(--terracotta);
-      margin: 2.5rem 0 0.7rem;
-    }
-
-    p {
-      font-size: 0.95rem;
-      color: var(--muted);
-      margin-bottom: 0.8rem;
-      font-weight: 300;
-    }
-
-    ul {
-      padding-left: 1.4rem;
-      margin-bottom: 0.8rem;
-    }
-
-    li {
-      font-size: 0.95rem;
-      color: var(--muted);
-      font-weight: 300;
-      margin-bottom: 0.3rem;
-    }
-
-    .highlight-box {
-      background: var(--sand);
-      border-left: 3px solid var(--clay);
-      border-radius: 0 10px 10px 0;
-      padding: 1.2rem 1.5rem;
-      margin: 1.5rem 0;
-    }
-
+    main { max-width: 720px; margin: 4rem auto; padding: 0 5%; }
+    .page-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--clay); font-weight: 500; margin-bottom: 0.8rem; }
+    h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--deep); line-height: 1.2; margin-bottom: 0.5rem; }
+    .update-date { font-size: 0.85rem; color: var(--muted); margin-bottom: 3rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(196,137,106,0.2); }
+    h2 { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--terracotta); margin: 2.5rem 0 0.7rem; }
+    p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.8rem; font-weight: 300; }
+    ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+    li { font-size: 0.95rem; color: var(--muted); font-weight: 300; margin-bottom: 0.3rem; }
+    .highlight-box { background: var(--sand); border-left: 3px solid var(--clay); border-radius: 0 10px 10px 0; padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
     .highlight-box p { margin: 0; }
-
-    footer {
-      background: var(--deep);
-      color: rgba(255,255,255,0.4);
-      text-align: center;
-      padding: 2rem 5%;
-      font-size: 0.82rem;
-      margin-top: 5rem;
-    }
+    footer { background: var(--deep); color: rgba(255,255,255,0.4); text-align: center; padding: 2rem 5%; font-size: 0.82rem; margin-top: 5rem; }
     footer span { color: var(--accent); }
-    footer a {
-      color: rgba(255,255,255,0.4);
-      text-decoration: underline;
-      margin-left: 1rem;
-    }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: underline; margin-left: 1rem; }
     footer a:hover { color: var(--accent); }
+
+    /* BANNIÈRE COOKIES */
+    #cookie-banner-priv {
+      position: fixed; bottom: 1.5rem; left: 50%;
+      transform: translateX(-50%); z-index: 9999;
+      width: min(95%, 680px); background: var(--deep);
+      color: rgba(255,255,255,0.85); border-radius: 16px;
+      padding: 1.2rem 1.6rem; display: flex; align-items: center;
+      gap: 1rem; flex-wrap: wrap;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: opacity 0.4s, transform 0.4s;
+    }
+    #cookie-banner-priv.hidden { opacity: 0; pointer-events: none; transform: translateX(-50%) translateY(20px); }
+    #cookie-banner-priv p { flex: 1; font-size: 0.85rem; line-height: 1.6; min-width: 180px; margin: 0; color: rgba(255,255,255,0.85); }
+    .priv-actions { display: flex; gap: 0.7rem; }
+    .btn-acc { background: var(--terracotta); color: white; border: none; padding: 0.5rem 1.2rem; border-radius: 50px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: background 0.2s; }
+    .btn-acc:hover { background: var(--clay); }
+    .btn-ref { background: transparent; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 50px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
+    .btn-ref:hover { border-color: rgba(255,255,255,0.5); color: white; }
   </style>
 </head>
 <body>
@@ -147,10 +67,8 @@
   <p class="update-date">Dernière mise à jour : avril 2026</p>
 
   <h2>1. Responsable du traitement</h2>
-  <p>
-    <strong>David G. Akpovi</strong> — ProAvecIA<br/>
-    Email : <a href="/cdn-cgi/l/email-protection#701411061914111b001f061930171d11191c5e131f1d" style="color:var(--terracotta)"><span class="__cf_email__" data-cfemail="355154435c51545e455a435c755258545c591b565a58">[email&#160;protected]</span></a>
-  </p>
+  <p><strong>David G. Akpovi</strong> — ProAvecIA<br/>
+  Email : <a href="mailto:davidakpovi@gmail.com" style="color:var(--terracotta)">davidakpovi@gmail.com</a></p>
 
   <h2>2. Données collectées</h2>
   <p>Si vous acceptez les cookies analytiques, Google Analytics collecte les informations suivantes :</p>
@@ -165,30 +83,16 @@
   </div>
 
   <h2>3. Finalité du traitement</h2>
-  <p>
-    Les données collectées servent uniquement à analyser l'audience du site et améliorer son contenu.
-    Elles ne sont pas utilisées à des fins publicitaires ni revendues à des tiers.
-  </p>
+  <p>Les données collectées servent uniquement à analyser l'audience du site et améliorer son contenu. Elles ne sont pas utilisées à des fins publicitaires ni revendues à des tiers.</p>
 
   <h2>4. Base légale</h2>
-  <p>
-    Le traitement est fondé sur votre <strong>consentement explicite</strong> (Art. 6.1.a du RGPD).
-    Vous pouvez retirer ce consentement à tout moment en effaçant les cookies de votre navigateur
-    ou en refusant via la bannière de consentement.
-  </p>
+  <p>Le traitement est fondé sur votre <strong>consentement explicite</strong> (Art. 6.1.a du RGPD). Vous pouvez retirer ce consentement à tout moment en effaçant les cookies de votre navigateur ou en refusant via la bannière de consentement.</p>
 
   <h2>5. Durée de conservation</h2>
-  <p>
-    Les données analytiques sont conservées <strong>14 mois maximum</strong> par Google Analytics,
-    conformément à la configuration recommandée par la CNIL.
-  </p>
+  <p>Les données analytiques sont conservées <strong>14 mois maximum</strong> par Google Analytics, conformément à la configuration recommandée par la CNIL.</p>
 
   <h2>6. Transfert hors UE</h2>
-  <p>
-    Google Analytics peut transférer des données vers les États-Unis. Google LLC est soumis aux
-    clauses contractuelles types approuvées par la Commission européenne, garantissant un niveau
-    de protection adéquat.
-  </p>
+  <p>Google Analytics peut transférer des données vers les États-Unis. Google LLC est soumis aux clauses contractuelles types approuvées par la Commission européenne, garantissant un niveau de protection adéquat.</p>
 
   <h2>7. Vos droits</h2>
   <p>Conformément au RGPD, vous disposez des droits suivants :</p>
@@ -199,15 +103,8 @@
     <li><strong>Opposition</strong> : vous opposer au traitement</li>
     <li><strong>Portabilité</strong> : recevoir vos données dans un format lisible</li>
   </ul>
-  <p>
-    Pour exercer ces droits, contactez-nous à :
-    <a href="/cdn-cgi/l/email-protection#1f7b7e69767b7e746f7069765f78727e7673317c7072" style="color:var(--terracotta)"><span class="__cf_email__" data-cfemail="b7d3d6c1ded3d6dcc7d8c1def7d0dad6dedb99d4d8da">[email&#160;protected]</span></a>
-  </p>
-  <p>
-    Vous pouvez également introduire une réclamation auprès de la
-    <a href="https://www.cnil.fr" target="_blank" style="color:var(--terracotta)">CNIL</a>
-    si vous estimez que vos droits ne sont pas respectés.
-  </p>
+  <p>Pour exercer ces droits : <a href="mailto:davidakpovi@gmail.com" style="color:var(--terracotta)">davidakpovi@gmail.com</a></p>
+  <p>Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" style="color:var(--terracotta)">CNIL</a> si vous estimez que vos droits ne sont pas respectés.</p>
 
   <h2>8. Cookies utilisés</h2>
   <p>Ce site utilise uniquement des cookies analytiques Google Analytics :</p>
@@ -218,5 +115,40 @@
   <p>Aucun cookie publicitaire ou de ciblage n'est déposé.</p>
 
   <h2>9. Contact</h2>
-  <p>
-    Pour toute question relative à cette politique de confide
+  <p>Pour toute question relative à cette politique de confidentialité, contactez-nous à : <a href="mailto:davidakpovi@gmail.com" style="color:var(--terracotta)">davidakpovi@gmail.com</a></p>
+</main>
+
+<footer>
+  <p>© 2026 <span>ProAvecIA</span> · Tous droits réservés
+    <a href="https://davidakpovi.github.io/proavecia/">Retour au site</a>
+  </p>
+</footer>
+
+<!-- BANNIÈRE CONSENTEMENT -->
+<div id="cookie-banner-priv">
+  <p>Ce site utilise Google Analytics pour analyser le trafic et améliorer l'expérience utilisateur. Vos données sont traitées conformément au RGPD.</p>
+  <div class="priv-actions">
+    <button class="btn-acc" onclick="acceptPriv()">Accepter</button>
+    <button class="btn-ref" onclick="refusePriv()">Refuser</button>
+  </div>
+</div>
+
+<script>
+  function acceptPriv() {
+    localStorage.setItem('cookie_consent', 'accepted');
+    document.getElementById('cookie-banner-priv').classList.add('hidden');
+  }
+  function refusePriv() {
+    localStorage.setItem('cookie_consent', 'refused');
+    document.getElementById('cookie-banner-priv').classList.add('hidden');
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    var consent = localStorage.getItem('cookie_consent');
+    if (consent === 'accepted' || consent === 'refused') {
+      document.getElementById('cookie-banner-priv').classList.add('hidden');
+    }
+  });
+</script>
+
+</body>
+</html>
