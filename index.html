@@ -4,1106 +4,466 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ProAvecIA – Formateur IA pour Professionnels | ChatGPT, Claude, Gemini</title>
-  <meta name="description" content="Cours particuliers en ligne sur l'IA : ChatGPT, Claude et Gemini. Formateur certifié Google AI, spécialisé pour les professionnels du marketing, SEO, Social Media et freelances." />
+  <meta name="description" content="Cours particuliers en ligne sur l'IA : ChatGPT, Claude et Gemini. Formateur certifie Google AI, specialise pour les professionnels du marketing, SEO, Social Media et freelances." />
   <meta name="author" content="David G. Akpovi" />
-
-  <!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ProAvecIA – Formateur IA pour Professionnels" />
-  <meta property="og:description" content="Maîtrisez ChatGPT, Claude et Gemini avec un formateur certifié Google AI. Cours en ligne sur-mesure pour booster votre carrière." />
+  <meta property="og:description" content="Maitrisez ChatGPT, Claude et Gemini avec un formateur certifie Google AI. Cours en ligne sur-mesure pour booster votre carriere." />
   <meta property="og:url" content="https://davidakpovi.github.io/proavecia/" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:image" content="https://davidakpovi.github.io/proavecia/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-
-  <!-- Twitter/X Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ProAvecIA – Formateur IA pour Professionnels" />
-  <meta name="twitter:description" content="Maîtrisez ChatGPT, Claude et Gemini avec un formateur certifié Google AI." />
+  <meta name="twitter:description" content="Maitrisez ChatGPT, Claude et Gemini avec un formateur certifie Google AI." />
   <meta name="twitter:image" content="https://davidakpovi.github.io/proavecia/og-image.png" />
-
-  <!-- Favicon emoji fallback -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23B5673E'/><text x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='bold' text-anchor='middle' fill='white'>IA</text></svg>" />
-    <!-- Google Analytics RGPD-compliant -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    // Consentement refusé par défaut (RGPD)
-    gtag('consent', 'default', {
-      analytics_storage: 'denied',
-      ad_storage: 'denied',
-      wait_for_update: 500
-    });
+    gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', wait_for_update: 500 });
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --sand: #F5EFE6;
-      --warm-white: #FDFAF5;
-      --clay: #C4896A;
-      --terracotta: #B5673E;
-      --deep: #2C2416;
-      --muted: #7A6A56;
-      --accent: #E8A87C;
-      --soft: #EDE3D8;
+      --sand: #F5EFE6; --warm-white: #FDFAF5; --clay: #C4896A;
+      --terracotta: #B5673E; --deep: #2C2416; --muted: #7A6A56;
+      --accent: #E8A87C; --soft: #EDE3D8;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--warm-white);
-      color: var(--deep);
-      overflow-x: hidden;
-    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--deep); overflow-x: hidden; }
 
     /* NAV */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 1.2rem 5%;
-      background: rgba(253,250,245,0.88);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(196,137,106,0.15);
-    }
-
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      color: var(--terracotta);
-      letter-spacing: -0.02em;
-    }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 5%; background: rgba(253,250,245,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(196,137,106,0.15); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--terracotta); letter-spacing: -0.02em; text-decoration: none; }
     .logo span { font-style: italic; color: var(--clay); }
-
     nav ul { list-style: none; display: flex; gap: 2rem; }
-    nav ul a {
-      text-decoration: none;
-      color: var(--muted);
-      font-size: 0.9rem;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      transition: color 0.2s;
-    }
+    nav ul a { text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 500; letter-spacing: 0.03em; transition: color 0.2s; }
     nav ul a:hover { color: var(--terracotta); }
-
-    .nav-cta {
-      background: var(--terracotta);
-      color: white !important;
-      padding: 0.55rem 1.3rem;
-      border-radius: 50px;
-      transition: background 0.2s !important;
-    }
-    .nav-cta:hover { background: var(--clay) !important; color: white !important; }
+    .nav-cta { background: var(--terracotta); color: white !important; padding: 0.55rem 1.3rem; border-radius: 50px; transition: background 0.2s !important; }
+    .nav-cta:hover { background: var(--clay) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.3rem; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--deep); border-radius: 2px; transition: all 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     /* HERO */
-    .hero {
-      min-height: 100vh;
-      display: flex; align-items: center;
-      padding: 7rem 5% 4rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-bg {
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(196,137,106,0.12) 0%, transparent 70%),
-                  radial-gradient(ellipse 50% 50% at 20% 80%, rgba(232,168,124,0.1) 0%, transparent 60%);
-    }
-
-    /* organic blob */
-    .blob {
-      position: absolute;
-      right: -5%;
-      top: 10%;
-      width: 520px; height: 520px;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--clay) 60%, var(--terracotta) 100%);
-      border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-      opacity: 0.13;
-      animation: morph 10s ease-in-out infinite alternate;
-    }
-
-    @keyframes morph {
-      0%   { border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; }
-      50%  { border-radius: 40% 60% 45% 55% / 60% 40% 55% 45%; }
-      100% { border-radius: 55% 45% 60% 40% / 45% 55% 50% 50%; }
-    }
-
+    .hero { min-height: 100vh; display: flex; align-items: center; padding: 7rem 5% 4rem; position: relative; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(196,137,106,0.12) 0%, transparent 70%), radial-gradient(ellipse 50% 50% at 20% 80%, rgba(232,168,124,0.1) 0%, transparent 60%); }
+    .blob { position: absolute; right: -5%; top: 10%; width: 520px; height: 520px; background: linear-gradient(135deg, var(--accent) 0%, var(--clay) 60%, var(--terracotta) 100%); border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; opacity: 0.13; animation: morph 10s ease-in-out infinite alternate; }
+    @keyframes morph { 0% { border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; } 50% { border-radius: 40% 60% 45% 55% / 60% 40% 55% 45%; } 100% { border-radius: 55% 45% 60% 40% / 45% 55% 50% 50%; } }
     .hero-content { position: relative; max-width: 620px; }
-
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: var(--soft);
-      border: 1px solid rgba(196,137,106,0.3);
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      color: var(--clay);
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      margin-bottom: 1.8rem;
-      opacity: 0; animation: fadeUp 0.7s 0.1s forwards;
-    }
-
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--soft); border: 1px solid rgba(196,137,106,0.3); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.8rem; color: var(--clay); font-weight: 500; letter-spacing: 0.05em; margin-bottom: 1.8rem; opacity: 0; animation: fadeUp 0.7s 0.1s forwards; }
     .hero-badge::before { content: '●'; font-size: 0.5rem; color: var(--clay); }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.4rem, 5vw, 3.8rem);
-      line-height: 1.15;
-      color: var(--deep);
-      margin-bottom: 1.4rem;
-      opacity: 0; animation: fadeUp 0.7s 0.25s forwards;
-    }
-
-    h1 em {
-      font-style: italic;
-      color: var(--terracotta);
-    }
-
-    .hero-sub {
-      font-size: 1.05rem;
-      line-height: 1.75;
-      color: var(--muted);
-      font-weight: 300;
-      margin-bottom: 2.4rem;
-      max-width: 500px;
-      opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
-    }
-
-    .hero-actions {
-      display: flex; gap: 1rem; flex-wrap: wrap;
-      opacity: 0; animation: fadeUp 0.7s 0.55s forwards;
-    }
-
-    .btn-primary {
-      background: var(--terracotta);
-      color: white;
-      padding: 0.9rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: all 0.25s;
-      box-shadow: 0 4px 20px rgba(181,103,62,0.3);
-    }
-    .btn-primary:hover { background: var(--clay); transform: translateY(-2px); box-shadow: 0 6px 28px rgba(181,103,62,0.4); }
-
-    .btn-secondary {
-      background: transparent;
-      color: var(--terracotta);
-      padding: 0.9rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-      border: 1.5px solid var(--clay);
-      transition: all 0.25s;
-    }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.15; color: var(--deep); margin-bottom: 1.4rem; opacity: 0; animation: fadeUp 0.7s 0.25s forwards; }
+    h1 em { font-style: italic; color: var(--terracotta); }
+    .hero-sub { font-size: 1.05rem; line-height: 1.75; color: var(--muted); font-weight: 300; margin-bottom: 2.4rem; max-width: 500px; opacity: 0; animation: fadeUp 0.7s 0.4s forwards; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.7s 0.55s forwards; }
+    .btn-primary { background: var(--terracotta); color: white; padding: 0.9rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.25s; box-shadow: 0 4px 20px rgba(181,103,62,0.3); }
+    .btn-primary:hover { background: var(--clay); transform: translateY(-2px); }
+    .btn-secondary { background: transparent; color: var(--terracotta); padding: 0.9rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 500; font-size: 0.95rem; border: 1.5px solid var(--clay); transition: all 0.25s; }
     .btn-secondary:hover { background: var(--soft); }
-
-    .hero-stats {
-      margin-top: 3.5rem;
-      display: flex; gap: 2.5rem;
-      opacity: 0; animation: fadeUp 0.7s 0.7s forwards;
-    }
-
+    .hero-stats { margin-top: 3.5rem; display: flex; gap: 2.5rem; opacity: 0; animation: fadeUp 0.7s 0.7s forwards; }
     .stat { display: flex; flex-direction: column; }
-    .stat-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      color: var(--terracotta);
-      font-weight: 600;
-    }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--terracotta); font-weight: 600; }
     .stat-label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.2rem; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(22px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* SECTION BASE */
+    /* SECTIONS */
     section { padding: 6rem 5%; }
-
-    .section-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--clay);
-      font-weight: 500;
-      margin-bottom: 0.8rem;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      color: var(--deep);
-      line-height: 1.2;
-      margin-bottom: 1.2rem;
-    }
-
+    .section-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--clay); font-weight: 500; margin-bottom: 0.8rem; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--deep); line-height: 1.2; margin-bottom: 1.2rem; }
     h2 em { font-style: italic; color: var(--terracotta); }
-
-    .section-sub {
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.8;
-      max-width: 520px;
-      font-weight: 300;
-    }
+    .section-sub { color: var(--muted); font-size: 1rem; line-height: 1.8; max-width: 520px; font-weight: 300; }
 
     /* POUR QUI */
     .pourqui { background: var(--sand); }
-
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .card {
-      background: var(--warm-white);
-      border-radius: 18px;
-      padding: 2rem;
-      border: 1px solid rgba(196,137,106,0.15);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .card { background: var(--warm-white); border-radius: 18px; padding: 2rem; border: 1px solid rgba(196,137,106,0.15); transition: transform 0.25s, box-shadow 0.25s; }
     .card:hover { transform: translateY(-5px); box-shadow: 0 12px 36px rgba(44,36,22,0.08); }
-
-    .card-icon {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.15rem;
-      color: var(--deep);
-      margin-bottom: 0.6rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.7;
-      font-weight: 300;
-    }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--deep); margin-bottom: 0.6rem; }
+    .card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; font-weight: 300; }
 
     /* SERVICES */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .service-card {
-      background: var(--sand);
-      border-radius: 18px;
-      padding: 2.2rem;
-      border: 1px solid rgba(196,137,106,0.12);
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.25s;
-    }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .service-card { background: var(--sand); border-radius: 18px; padding: 2.2rem; border: 1px solid rgba(196,137,106,0.12); position: relative; overflow: hidden; transition: transform 0.25s; }
     .service-card:hover { transform: translateY(-4px); }
-    .service-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--clay), var(--accent));
-    }
-
-    .service-tag {
-      display: inline-block;
-      background: rgba(196,137,106,0.15);
-      color: var(--terracotta);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.8rem;
-      border-radius: 50px;
-      margin-bottom: 1rem;
-    }
-
-    .service-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      color: var(--deep);
-      margin-bottom: 0.8rem;
-    }
-
-    .service-card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.75;
-      font-weight: 300;
-      margin-bottom: 1.2rem;
-    }
-
-    .service-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-
-    .service-list li {
-      font-size: 0.85rem;
-      color: var(--deep);
-      padding-left: 1.2rem;
-      position: relative;
-    }
-    .service-list li::before {
-      content: '→';
-      position: absolute; left: 0;
-      color: var(--clay);
-    }
+    .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--clay), var(--accent)); }
+    .service-tag { display: inline-block; background: rgba(196,137,106,0.15); color: var(--terracotta); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 50px; margin-bottom: 1rem; }
+    .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--deep); margin-bottom: 0.8rem; }
+    .service-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.75; font-weight: 300; margin-bottom: 1.2rem; }
+    .service-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+    .service-list li { font-size: 0.85rem; color: var(--deep); padding-left: 1.2rem; position: relative; }
+    .service-list li::before { content: '→'; position: absolute; left: 0; color: var(--clay); }
 
     /* TARIFS */
     .tarifs { background: var(--sand); }
-
-    .tarifs-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .tarif-card {
-      background: var(--warm-white);
-      border-radius: 18px;
-      padding: 2rem;
-      border: 1px solid rgba(196,137,106,0.15);
-      text-align: center;
-      transition: transform 0.25s, box-shadow 0.25s;
-      position: relative;
-    }
+    .tarifs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .tarif-card { background: var(--warm-white); border-radius: 18px; padding: 2rem; border: 1px solid rgba(196,137,106,0.15); text-align: center; transition: transform 0.25s, box-shadow 0.25s; }
     .tarif-card:hover { transform: translateY(-5px); box-shadow: 0 12px 36px rgba(44,36,22,0.08); }
-
-    .tarif-card.featured {
-      background: var(--terracotta);
-      border-color: var(--terracotta);
-    }
-    .tarif-card.featured h3,
-    .tarif-card.featured .tarif-price,
-    .tarif-card.featured .tarif-unit,
-    .tarif-card.featured p { color: white !important; }
+    .tarif-card.featured { background: var(--terracotta); border-color: var(--terracotta); }
+    .tarif-card.featured h3, .tarif-card.featured .tarif-price, .tarif-card.featured .tarif-unit, .tarif-card.featured p { color: white !important; }
     .tarif-card.featured .tarif-badge { background: rgba(255,255,255,0.25); color: white; }
-
-    .tarif-badge {
-      display: inline-block;
-      background: var(--soft);
-      color: var(--clay);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.9rem;
-      border-radius: 50px;
-      margin-bottom: 1.2rem;
-    }
-
-    .tarif-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.15rem;
-      color: var(--deep);
-      margin-bottom: 0.8rem;
-    }
-
-    .tarif-price {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      color: var(--terracotta);
-      font-weight: 600;
-    }
+    .tarif-badge { display: inline-block; background: var(--soft); color: var(--clay); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 50px; margin-bottom: 1.2rem; }
+    .tarif-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--deep); margin-bottom: 0.8rem; }
+    .tarif-price { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--terracotta); font-weight: 600; }
     .tarif-unit { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; margin-bottom: 1rem; }
-
     .tarif-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; font-weight: 300; }
-
-    .tarif-btn {
-      display: block;
-      margin-top: 1.4rem;
-      text-align: center;
-      padding: 0.65rem 1.2rem;
-      border-radius: 50px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      text-decoration: none;
-      border: 1.5px solid var(--clay);
-      color: var(--terracotta);
-      transition: all 0.2s;
-    }
+    .tarif-btn { display: block; margin-top: 1.4rem; text-align: center; padding: 0.65rem 1.2rem; border-radius: 50px; font-size: 0.88rem; font-weight: 500; text-decoration: none; border: 1.5px solid var(--clay); color: var(--terracotta); transition: all 0.2s; cursor: pointer; }
     .tarif-btn:hover { background: var(--terracotta); color: white; }
-    .tarif-card.featured .tarif-btn {
-      background: white;
-      color: var(--terracotta);
-      border-color: white;
-    }
+    .tarif-card.featured .tarif-btn { background: white; color: var(--terracotta); border-color: white; }
     .tarif-card.featured .tarif-btn:hover { background: var(--soft); }
-
-    /* CONTACT */
-    .contact-wrap {
-      max-width: 600px;
-      margin: 3rem auto 0;
-      background: var(--sand);
-      border-radius: 24px;
-      padding: 3rem;
-      border: 1px solid rgba(196,137,106,0.2);
-    }
-
-    .form-group { margin-bottom: 1.4rem; }
-
-    label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--deep);
-      margin-bottom: 0.5rem;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      background: var(--warm-white);
-      border: 1.5px solid rgba(196,137,106,0.25);
-      border-radius: 10px;
-      padding: 0.75rem 1rem;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      color: var(--deep);
-      transition: border-color 0.2s;
-      outline: none;
-    }
-    input:focus, textarea:focus, select:focus { border-color: var(--clay); }
-    textarea { resize: vertical; min-height: 120px; }
-
-    .form-submit {
-      width: 100%;
-      background: var(--terracotta);
-      color: white;
-      border: none;
-      padding: 1rem;
-      border-radius: 50px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 1rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.25s;
-      margin-top: 0.5rem;
-    }
-    .form-submit:hover { background: var(--clay); transform: translateY(-2px); }
 
     /* CERTIFICATIONS */
     .certifications { background: var(--deep); }
     .certifications .section-label { color: var(--accent); }
     .certifications h2 { color: var(--warm-white); }
     .certifications .section-sub { color: rgba(255,255,255,0.5); }
-
-    .certs-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.2rem;
-      margin-top: 3rem;
-    }
-
-    .cert-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 1.8rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      transition: transform 0.25s, background 0.25s;
-      position: relative;
-      overflow: hidden;
-    }
+    .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; margin-top: 3rem; }
+    .cert-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.8rem; display: flex; flex-direction: column; gap: 0.8rem; transition: transform 0.25s, background 0.25s; position: relative; overflow: hidden; }
     .cert-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.08); }
-    .cert-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 3px;
-    }
-    .cert-card.google::after     { background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335); }
-    .cert-card.google2::after    { background: linear-gradient(90deg, #34A853, #4285F4); }
+    .cert-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; }
+    .cert-card.google::after  { background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335); }
+    .cert-card.google2::after { background: linear-gradient(90deg, #34A853, #4285F4); }
     .cert-card.vanderbilt::after { background: linear-gradient(90deg, #866D4B, #CFB991); }
-    .cert-card.oracle::after     { background: linear-gradient(90deg, #F80000, #FF6B35); }
-    .cert-card.aicerts::after    { background: linear-gradient(90deg, #866D4B, #D4A853); }
-
+    .cert-card.oracle::after  { background: linear-gradient(90deg, #F80000, #FF6B35); }
+    .cert-card.aicerts::after { background: linear-gradient(90deg, #866D4B, #D4A853); }
     .cert-logo { font-size: 1.8rem; }
-
-    .cert-issuer {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: rgba(255,255,255,0.4);
-      font-weight: 500;
-    }
-
-    .cert-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.05rem;
-      color: var(--warm-white);
-      line-height: 1.35;
-    }
-
-    .cert-courses {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-    }
-
-    .cert-pill {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.5);
-      font-size: 0.68rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 50px;
-    }
-
-    .cert-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: auto;
-      padding-top: 0.5rem;
-    }
-
+    .cert-issuer { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); font-weight: 500; }
+    .cert-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--warm-white); line-height: 1.35; }
+    .cert-courses { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .cert-pill { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); font-size: 0.68rem; padding: 0.2rem 0.6rem; border-radius: 50px; }
+    .cert-meta { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.5rem; }
     .cert-date { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
-
-    .cert-verify {
-      font-size: 0.75rem;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      transition: opacity 0.2s;
-    }
+    .cert-verify { font-size: 0.75rem; color: var(--accent); text-decoration: none; font-weight: 500; transition: opacity 0.2s; }
     .cert-verify:hover { opacity: 0.7; }
 
+    /* CONTACT */
+    .contact-wrap { max-width: 600px; margin: 3rem auto 0; background: var(--sand); border-radius: 24px; padding: 3rem; border: 1px solid rgba(196,137,106,0.2); }
+
     /* FOOTER */
-    footer {
-      background: var(--deep);
-      color: rgba(255,255,255,0.5);
-      text-align: center;
-      padding: 2rem 5%;
-      font-size: 0.85rem;
-    }
+    footer { background: var(--deep); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem 5%; font-size: 0.85rem; }
     footer span { color: var(--accent); }
+    footer a.privacy-link { color: rgba(255,255,255,0.4); text-decoration: underline; margin-left: 1rem; font-size: 0.82rem; }
+    footer a.privacy-link:hover { color: var(--accent); }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      nav ul { display: none; }
-      .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
-      .contact-wrap { padding: 2rem 1.5rem; }
-    }
-
-
-    /* ===== HAMBURGER MOBILE ===== */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 0.3rem;
-    }
-    .hamburger span {
-      display: block;
-      width: 24px; height: 2px;
-      background: var(--deep);
-      border-radius: 2px;
-      transition: all 0.3s;
-    }
-    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
+    /* HAMBURGER MOBILE */
     @media (max-width: 768px) {
       .hamburger { display: flex; }
-      nav ul {
-        display: none;
-        position: fixed;
-        top: 60px; left: 0; right: 0;
-        background: var(--warm-white);
-        flex-direction: column;
-        padding: 1.5rem 5%;
-        gap: 1.2rem;
-        border-bottom: 1px solid rgba(196,137,106,0.2);
-        box-shadow: 0 8px 20px rgba(44,36,22,0.08);
-        z-index: 99;
-      }
+      nav ul { display: none; position: fixed; top: 60px; left: 0; right: 0; background: var(--warm-white); flex-direction: column; padding: 1.5rem 5%; gap: 1.2rem; border-bottom: 1px solid rgba(196,137,106,0.2); box-shadow: 0 8px 20px rgba(44,36,22,0.08); z-index: 99; }
       nav ul.open { display: flex; }
       nav ul a { font-size: 1rem; }
       .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
       .contact-wrap { padding: 2rem 1.5rem; }
     }
-    /* ===== RGPD BANNER ===== */
-    #cookie-banner {
-      position: fixed;
-      bottom: 1.5rem; left: 50%;
-      transform: translateX(-50%);
-      z-index: 9999;
-      width: min(95%, 700px);
-      background: var(--deep);
-      color: rgba(255,255,255,0.85);
-      border-radius: 16px;
-      padding: 1.4rem 1.8rem;
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-      flex-wrap: wrap;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.35);
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: opacity 0.4s, transform 0.4s;
-    }
-    #cookie-banner.hidden {
-      opacity: 0;
-      pointer-events: none;
-      transform: translateX(-50%) translateY(20px);
-    }
-    #cookie-banner p {
-      flex: 1;
-      font-size: 0.85rem;
-      line-height: 1.6;
-      min-width: 200px;
-    }
-    #cookie-banner a {
-      color: var(--accent);
-      text-decoration: underline;
-      cursor: pointer;
-    }
+
+    /* COOKIE BANNER */
+    #cookie-banner { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); z-index: 9999; width: min(95%, 700px); background: var(--deep); color: rgba(255,255,255,0.85); border-radius: 16px; padding: 1.4rem 1.8rem; display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; box-shadow: 0 8px 40px rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.08); transition: opacity 0.4s, transform 0.4s; }
+    #cookie-banner.hidden { opacity: 0; pointer-events: none; transform: translateX(-50%) translateY(20px); }
+    #cookie-banner p { flex: 1; font-size: 0.85rem; line-height: 1.6; min-width: 200px; margin: 0; color: rgba(255,255,255,0.85); font-weight: 300; }
+    #cookie-banner a { color: var(--accent); text-decoration: underline; }
     .cookie-actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
-    .btn-accept {
-      background: var(--terracotta);
-      color: white;
-      border: none;
-      padding: 0.55rem 1.3rem;
-      border-radius: 50px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
+    .btn-accept { background: var(--terracotta); color: white; border: none; padding: 0.55rem 1.3rem; border-radius: 50px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: background 0.2s; }
     .btn-accept:hover { background: var(--clay); }
-    .btn-refuse {
-      background: transparent;
-      color: rgba(255,255,255,0.6);
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 0.55rem 1.3rem;
-      border-radius: 50px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
+    .btn-refuse { background: transparent; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.2); padding: 0.55rem 1.3rem; border-radius: 50px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
     .btn-refuse:hover { border-color: rgba(255,255,255,0.5); color: white; }
-    footer a.privacy-link {
-      color: rgba(255,255,255,0.4);
-      text-decoration: underline;
-      cursor: pointer;
-      margin-left: 1rem;
-      font-size: 0.82rem;
-    }
-    footer a.privacy-link:hover { color: var(--accent); }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#accueil" class="logo">Pro<span>AvecIA</span></a>
-  <ul>
+  <ul id="nav-menu">
     <li><a href="#pourqui">Pour qui ?</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#tarifs">Tarifs</a></li>
     <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#contact" class="nav-cta" onclick="trackEvent('cta_click', 'Me contacter', 'Navigation')">Me contacter</a></li>
+    <li><a href="#contact" class="nav-cta" onclick="trackEvent('cta_click','Me contacter','Navigation')">Me contacter</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+  <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="accueil">
   <div class="hero-bg"></div>
   <div class="blob"></div>
   <div class="hero-content">
     <div class="hero-badge">ChatGPT · Claude · Gemini · En ligne · Sur-mesure</div>
-    <h1>Maîtrisez l'IA<br/>pour booster votre <em>carrière pro</em></h1>
-    <p class="hero-sub">
-      Des cours particuliers en ligne, adaptés à votre métier. Apprenez à maîtriser <strong>ChatGPT, Claude et Gemini</strong> pour booster votre marketing, votre productivité et votre carrière.
-    </p>
+    <h1>Maitrisez l'IA<br/>pour booster votre <em>carriere pro</em></h1>
+    <p class="hero-sub">Des cours particuliers en ligne, adaptes a votre metier. Apprenez a maitriser <strong>ChatGPT, Claude et Gemini</strong> pour booster votre marketing, votre productivite et votre carriere.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary" onclick="trackEvent('cta_click', 'Réserver une séance', 'Hero')">Réserver une séance</a>
-      <a href="#services" class="btn-secondary" onclick="trackEvent('cta_click', 'Découvrir les services', 'Hero')">Découvrir les services</a>
+      <a href="#contact" class="btn-primary" onclick="trackEvent('cta_click','Reserver une seance','Hero')">Reserver une seance</a>
+      <a href="#services" class="btn-secondary" onclick="trackEvent('cta_click','Decouvrir les services','Hero')">Decouvrir les services</a>
     </div>
     <div class="hero-stats">
       <div class="stat"><span class="stat-num">5</span><span class="stat-label">Certifications</span></div>
-      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Outils maîtrisés</span></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Outils maitrisés</span></div>
       <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Cas concrets</span></div>
     </div>
   </div>
 </section>
 
-<!-- POUR QUI -->
 <section class="pourqui" id="pourqui">
   <div class="section-label">Pour qui ?</div>
   <h2>Fait pour les <em>professionnels ambitieux</em></h2>
-  <p class="section-sub">Que vous soyez salarié, manager ou en transition vers le freelance, ces cours sont conçus pour votre réalité du terrain.</p>
+  <p class="section-sub">Que vous soyez salarie, manager ou en transition vers le freelance, ces cours sont concus pour votre realite du terrain.</p>
   <div class="cards-grid">
-    <div class="card">
-      <div class="card-icon">📈</div>
-      <h3>Responsables Marketing & SEO</h3>
-      <p>Gagnez du temps, produisez plus, et prenez de l'avance sur vos concurrents en intégrant l'IA dans votre quotidien.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">💼</div>
-      <h3>Managers en transition</h3>
-      <p>Ajoutez une corde de plus à votre arc. Social Media, UX/UI, rédaction… l'IA vous permet d'élargir votre champ d'action.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🚀</div>
-      <h3>Futurs freelances</h3>
-      <p>Multipliez votre productivité et proposez des services augmentés à vos clients grâce aux bons outils IA.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🔰</div>
-      <h3>Débutants curieux</h3>
-      <p>Zéro jargon technique. On part de votre niveau et on avance à votre rythme, avec des cas pratiques dès la première séance.</p>
-    </div>
+    <div class="card"><div class="card-icon">📈</div><h3>Responsables Marketing & SEO</h3><p>Gagnez du temps, produisez plus, et prenez de l'avance sur vos concurrents en integrant l'IA dans votre quotidien.</p></div>
+    <div class="card"><div class="card-icon">💼</div><h3>Managers en transition</h3><p>Ajoutez une corde de plus a votre arc. Social Media, UX/UI, redaction… l'IA vous permet d'elargir votre champ d'action.</p></div>
+    <div class="card"><div class="card-icon">🚀</div><h3>Futurs freelances</h3><p>Multipliez votre productivite et proposez des services augmentes a vos clients grace aux bons outils IA.</p></div>
+    <div class="card"><div class="card-icon">🔰</div><h3>Debutants curieux</h3><p>Zero jargon technique. On part de votre niveau et on avance a votre rythme, avec des cas pratiques des la premiere seance.</p></div>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="section-label">Services</div>
   <h2>Ce qu'on travaille <em>ensemble</em></h2>
-  <p class="section-sub">Je vous forme sur <strong>ChatGPT, Claude et Gemini</strong> — l'outil qui correspond le mieux à vos besoins. On part de vos projets concrets, pas d'un programme générique.</p>
+  <p class="section-sub">Je vous forme sur <strong>ChatGPT, Claude et Gemini</strong> — l'outil qui correspond le mieux a vos besoins. On part de vos projets concrets, pas d'un programme generique.</p>
   <div class="services-grid">
     <div class="service-card">
       <span class="service-tag">Fondation</span>
-      <h3>Maîtriser ChatGPT, Claude & Gemini</h3>
-      <p>Choisir le bon outil selon la situation, le configurer et rédiger des prompts efficaces pour obtenir des résultats professionnels.</p>
-      <ul class="service-list">
-        <li>Comparatif & choix de l'outil adapté</li>
-        <li>Rédaction de prompts puissants</li>
-        <li>Création de workflows personnalisés</li>
-      </ul>
+      <h3>Maitriser ChatGPT, Claude & Gemini</h3>
+      <p>Choisir le bon outil selon la situation, le configurer et rediger des prompts efficaces pour obtenir des resultats professionnels.</p>
+      <ul class="service-list"><li>Comparatif & choix de l'outil adapte</li><li>Redaction de prompts puissants</li><li>Creation de workflows personnalises</li></ul>
     </div>
     <div class="service-card">
       <span class="service-tag">Marketing</span>
       <h3>IA pour le SEO & SEA</h3>
-      <p>Accélérez votre production de contenu, vos analyses et vos rapports grâce à l'IA appliquée au référencement.</p>
-      <ul class="service-list">
-        <li>Création de contenus optimisés</li>
-        <li>Analyse concurrentielle assistée</li>
-        <li>Automatisation des rapports</li>
-      </ul>
+      <p>Accelerez votre production de contenu, vos analyses et vos rapports grace a l'IA appliquee au referencement.</p>
+      <ul class="service-list"><li>Creation de contenus optimises</li><li>Analyse concurrentielle assistee</li><li>Automatisation des rapports</li></ul>
     </div>
     <div class="service-card">
       <span class="service-tag">Social Media</span>
-      <h3>IA pour les Réseaux Sociaux</h3>
-      <p>Planifiez, rédigez et adaptez vos contenus à chaque plateforme avec l'aide de l'IA.</p>
-      <ul class="service-list">
-        <li>Stratégie de contenu augmentée</li>
-        <li>Calendrier éditorial assisté</li>
-        <li>Veille et analyse LinkedIn/Instagram</li>
-      </ul>
+      <h3>IA pour les Reseaux Sociaux</h3>
+      <p>Planifiez, redigez et adaptez vos contenus a chaque plateforme avec l'aide de l'IA.</p>
+      <ul class="service-list"><li>Strategie de contenu augmentee</li><li>Calendrier editorial assiste</li><li>Veille et analyse LinkedIn/Instagram</li></ul>
     </div>
     <div class="service-card">
-      <span class="service-tag">Création</span>
+      <span class="service-tag">Creation</span>
       <h3>IA pour l'UX/UI & Web</h3>
-      <p>Générez des maquettes, des textes et des briefs créatifs pour vos projets de sites et interfaces.</p>
-      <ul class="service-list">
-        <li>Génération de maquettes rapides</li>
-        <li>Rédaction UX & microcopy</li>
-        <li>Briefing créatif avec l'IA</li>
-      </ul>
+      <p>Generez des maquettes, des textes et des briefs creatifs pour vos projets de sites et interfaces.</p>
+      <ul class="service-list"><li>Generation de maquettes rapides</li><li>Redaction UX & microcopy</li><li>Briefing creatif avec l'IA</li></ul>
     </div>
   </div>
 </section>
 
-<!-- TARIFS -->
 <section class="tarifs" id="tarifs">
   <div class="section-label">Tarifs</div>
   <h2>Des formules <em>flexibles</em></h2>
-  <p class="section-sub">Commencez par une séance découverte, puis choisissez le format qui vous convient. Tarif dégressif sur les packs.</p>
+  <p class="section-sub">Commencez par une seance decouverte, puis choisissez le format qui vous convient. Tarif degressif sur les packs.</p>
   <div class="tarifs-grid">
     <div class="tarif-card">
-      <span class="tarif-badge">Découverte</span>
-      <h3>Séance unique</h3>
+      <span class="tarif-badge">Decouverte</span>
+      <h3>Seance unique</h3>
       <div class="tarif-price">45€</div>
       <div class="tarif-unit">/ heure</div>
-      <p>Idéal pour commencer et évaluer si la formule vous convient.</p>
-      <a class="tarif-btn"
-         href="mailto:davidakpovi@gmail.com?subject=Demande%20S%C3%A9ance%20unique%20%2845%E2%82%AC%2Fh%29%20%E2%80%94%20ProAvecIA&body=Bonjour%20David%2C%0A%0AJe%20souhaite%20r%C3%A9server%20une%20s%C3%A9ance%20unique%20%C3%A0%2045%E2%82%AC%2Fh.%0A%0AMon%20pr%C3%A9nom%20%3A%20%5B...%5D%0AMon%20m%C3%A9tier%20%3A%20%5B...%5D%0AMon%20objectif%20%3A%20%5B...%5D%0AMes%20disponibilit%C3%A9s%20%3A%20%5B...%5D%0A%0AMerci%20!"
-         onclick="trackEvent('tarif_click', 'Séance unique', 'Tarifs')">
-        Choisir cette formule →
-      </a>
+      <p>Ideal pour commencer et evaluer si la formule vous convient.</p>
+      <a class="tarif-btn" id="tarif-seance" href="#" onclick="trackEvent('tarif_click','Seance unique','Tarifs')">Choisir cette formule →</a>
     </div>
     <div class="tarif-card featured">
       <span class="tarif-badge">⭐ Populaire</span>
       <h3>Pack 5h</h3>
       <div class="tarif-price">200€</div>
       <div class="tarif-unit">soit 40€/h · −11%</div>
-      <p>Le format idéal pour progresser rapidement sur vos cas concrets.</p>
-      <a class="tarif-btn"
-         href="mailto:davidakpovi@gmail.com?subject=Demande%20Pack%205h%20%28200%E2%82%AC%29%20%E2%80%94%20ProAvecIA&body=Bonjour%20David%2C%0A%0AJe%20souhaite%20r%C3%A9server%20le%20Pack%205h%20%C3%A0%20200%E2%82%AC.%0A%0AMon%20pr%C3%A9nom%20%3A%20%5B...%5D%0AMon%20m%C3%A9tier%20%3A%20%5B...%5D%0AMon%20objectif%20%3A%20%5B...%5D%0AMes%20disponibilit%C3%A9s%20%3A%20%5B...%5D%0A%0AMerci%20!"
-         onclick="trackEvent('tarif_click', 'Pack 5h', 'Tarifs')">
-        Choisir cette formule →
-      </a>
+      <p>Le format ideal pour progresser rapidement sur vos cas concrets.</p>
+      <a class="tarif-btn" id="tarif-5h" href="#" onclick="trackEvent('tarif_click','Pack 5h','Tarifs')">Choisir cette formule →</a>
     </div>
     <div class="tarif-card">
       <span class="tarif-badge">Engagement</span>
       <h3>Pack 10h</h3>
       <div class="tarif-price">350€</div>
       <div class="tarif-unit">soit 35€/h · −22%</div>
-      <p>Pour une montée en compétence complète et durable.</p>
-      <a class="tarif-btn"
-         href="mailto:davidakpovi@gmail.com?subject=Demande%20Pack%2010h%20%28350%E2%82%AC%29%20%E2%80%94%20ProAvecIA&body=Bonjour%20David%2C%0A%0AJe%20souhaite%20r%C3%A9server%20le%20Pack%2010h%20%C3%A0%20350%E2%82%AC.%0A%0AMon%20pr%C3%A9nom%20%3A%20%5B...%5D%0AMon%20m%C3%A9tier%20%3A%20%5B...%5D%0AMon%20objectif%20%3A%20%5B...%5D%0AMes%20disponibilit%C3%A9s%20%3A%20%5B...%5D%0A%0AMerci%20!"
-         onclick="trackEvent('tarif_click', 'Pack 10h', 'Tarifs')">
-        Choisir cette formule →
-      </a>
+      <p>Pour une montee en competence complete et durable.</p>
+      <a class="tarif-btn" id="tarif-10h" href="#" onclick="trackEvent('tarif_click','Pack 10h','Tarifs')">Choisir cette formule →</a>
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
 <section class="certifications" id="certifications">
   <div class="section-label">Certifications</div>
   <h2>Une expertise <em>reconnue</em></h2>
-  <p class="section-sub">Des formations certifiées par Google, Vanderbilt University, Oracle et AI CERTs — pour vous garantir un enseignement rigoureux et à jour.</p>
+  <p class="section-sub">Des formations certifiees par Google, Vanderbilt University, Oracle et AI CERTs — pour vous garantir un enseignement rigoureux et a jour.</p>
   <div class="certs-grid">
-
     <div class="cert-card google">
       <div class="cert-logo">🟦</div>
       <div class="cert-issuer">Google · Coursera</div>
       <div class="cert-name">Google AI Professional Certificate</div>
-      <div class="cert-courses">
-        <span class="cert-pill">AI Fundamentals</span>
-        <span class="cert-pill">Brainstorming & Planning</span>
-        <span class="cert-pill">Research & Insights</span>
-        <span class="cert-pill">Writing & Communication</span>
-        <span class="cert-pill">Content Creation</span>
-        <span class="cert-pill">Data Analysis</span>
-        <span class="cert-pill">App Building</span>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-date">Fév. 2026</span>
-        <a class="cert-verify" href="https://coursera.org/verify/professional-cert/ZK98S768X2TN" onclick="trackEvent('cert_click', 'Google AI Professional', 'Certifications')" target="_blank">Vérifier ↗</a>
-      </div>
+      <div class="cert-courses"><span class="cert-pill">AI Fundamentals</span><span class="cert-pill">Brainstorming & Planning</span><span class="cert-pill">Research & Insights</span><span class="cert-pill">Writing & Communication</span><span class="cert-pill">Content Creation</span><span class="cert-pill">Data Analysis</span><span class="cert-pill">App Building</span></div>
+      <div class="cert-meta"><span class="cert-date">Fev. 2026</span><a class="cert-verify" href="https://coursera.org/verify/professional-cert/ZK98S768X2TN" target="_blank" onclick="trackEvent('cert_click','Google AI Professional','Certifications')">Verifier ↗</a></div>
     </div>
-
     <div class="cert-card google2">
       <div class="cert-logo">🟩</div>
       <div class="cert-issuer">Google · Coursera</div>
       <div class="cert-name">Google Prompting Essentials</div>
-      <div class="cert-courses">
-        <span class="cert-pill">Prompts like a Pro</span>
-        <span class="cert-pill">Everyday Work Tasks</span>
-        <span class="cert-pill">Data Analysis</span>
-        <span class="cert-pill">AI as Expert Partner</span>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-date">Mars 2026</span>
-        <a class="cert-verify" href="https://coursera.org/verify/specialization/QV26WYQE5RN8" onclick="trackEvent('cert_click', 'Google Prompting Essentials', 'Certifications')" target="_blank">Vérifier ↗</a>
-      </div>
+      <div class="cert-courses"><span class="cert-pill">Prompts like a Pro</span><span class="cert-pill">Everyday Work Tasks</span><span class="cert-pill">Data Analysis</span><span class="cert-pill">AI as Expert Partner</span></div>
+      <div class="cert-meta"><span class="cert-date">Mars 2026</span><a class="cert-verify" href="https://coursera.org/verify/specialization/QV26WYQE5RN8" target="_blank" onclick="trackEvent('cert_click','Google Prompting Essentials','Certifications')">Verifier ↗</a></div>
     </div>
-
     <div class="cert-card vanderbilt">
       <div class="cert-logo">🎓</div>
       <div class="cert-issuer">Vanderbilt University · Coursera</div>
       <div class="cert-name">Prompt Engineering for ChatGPT</div>
-      <div class="cert-courses">
-        <span class="cert-pill">Prompt Engineering</span>
-        <span class="cert-pill">ChatGPT</span>
-        <span class="cert-pill">LLMs</span>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-date">Mars 2026</span>
-        <a class="cert-verify" href="https://coursera.org/verify/XYN6RXM97UUA" onclick="trackEvent('cert_click', 'Prompt Engineering ChatGPT', 'Certifications')" target="_blank">Vérifier ↗</a>
-      </div>
+      <div class="cert-courses"><span class="cert-pill">Prompt Engineering</span><span class="cert-pill">ChatGPT</span><span class="cert-pill">LLMs</span></div>
+      <div class="cert-meta"><span class="cert-date">Mars 2026</span><a class="cert-verify" href="https://coursera.org/verify/XYN6RXM97UUA" target="_blank" onclick="trackEvent('cert_click','Prompt Engineering ChatGPT','Certifications')">Verifier ↗</a></div>
     </div>
-
     <div class="cert-card oracle">
       <div class="cert-logo">🔴</div>
       <div class="cert-issuer">Oracle University</div>
       <div class="cert-name">Oracle Cloud Infrastructure AI Foundations Associate</div>
-      <div class="cert-courses">
-        <span class="cert-pill">Cloud AI</span>
-        <span class="cert-pill">OCI 2025</span>
-        <span class="cert-pill">Valide jusqu'en 2027</span>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-date">Août 2025</span>
-        <span class="cert-date" style="color:rgba(255,255,255,0.5)">Certifié Oracle ✓</span>
-      </div>
+      <div class="cert-courses"><span class="cert-pill">Cloud AI</span><span class="cert-pill">OCI 2025</span><span class="cert-pill">Valide jusqu'en 2027</span></div>
+      <div class="cert-meta"><span class="cert-date">Aout 2025</span><span class="cert-date" style="color:rgba(255,255,255,0.5)">Certifie Oracle ✓</span></div>
     </div>
-
-    <div class="cert-card" style="--cert-color: #866D4B;">
+    <div class="cert-card aicerts">
       <div class="cert-logo">🤖</div>
       <div class="cert-issuer">AI CERTs · Coursera</div>
       <div class="cert-name">AI for Vibe Coding</div>
-      <div class="cert-courses">
-        <span class="cert-pill">Vibe Coding</span>
-        <span class="cert-pill">AI & Dev</span>
-        <span class="cert-pill">No-code AI</span>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-date">Mars 2026</span>
-        <a class="cert-verify" href="https://coursera.org/verify/X7JKOYOJUA3W" target="_blank" onclick="trackEvent('cert_click', 'AI for Vibe Coding', 'Certifications')">Vérifier ↗</a>
-      </div>
+      <div class="cert-courses"><span class="cert-pill">Vibe Coding</span><span class="cert-pill">AI & Dev</span><span class="cert-pill">No-code AI</span></div>
+      <div class="cert-meta"><span class="cert-date">Mars 2026</span><a class="cert-verify" href="https://coursera.org/verify/X7JKOYOJUA3W" target="_blank" onclick="trackEvent('cert_click','AI for Vibe Coding','Certifications')">Verifier ↗</a></div>
     </div>
-
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div style="text-align:center">
     <div class="section-label">Contact</div>
     <h2>Parlons de votre <em>projet</em></h2>
-    <p class="section-sub" style="margin: 0 auto 0">Décrivez-moi votre situation et vos objectifs. Je vous réponds sous 24h.</p>
+    <p class="section-sub" style="margin:0 auto">Decrivez-moi votre situation et vos objectifs. Je vous reponds sous 24h.</p>
   </div>
   <div class="contact-wrap" style="text-align:center;">
-    <p style="color:var(--muted); font-size:0.95rem; line-height:1.8; margin-bottom:2rem;">
-      Décrivez-moi votre situation, votre métier et vos objectifs.<br/>
-      Je vous réponds sous 24h.
-    </p>
-    <a id="mailto-btn" href="/cdn-cgi/l/email-protection#e28683948b868389928d948ba2858f838b8ecc818d8fdd91978088878196dfa6878f838c8687c7d0d28687c7d0d2848d908f83968b8d8cc7d0d2aba3c7d0d2006276c7d0d2b2908da3948781aba3c4808d869bdfa08d8c888d9790c7d0d2a683948b86c7d0a1c7d2a3c7d2a3a887c7d0d2918d978a838b9687c7d0d2978c87c7d0d2848d908f83968b8d8cc7d0d2928790918d8c8c838e8b91c7a1d1c7a3db87c7d0d2919790c7d0d28ec7a7d0c7dad2c7dbdbaba3ccc7d2a3c7d2a3af8d8cc7d0d29290c7a1d1c7a3db8c8d8fc7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8d8cc7d0d28fc7a1d1c7a3db968b8790c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8d8cc7d0d28d80888781968b84c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8d8cc7d0d28c8b94878397c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3af8791c7d0d2868b91928d8c8b808b8e8b96c7a1d1c7a3db91c7d0d2c7d1a3c7d0d2c7d7a0ccccccc7d7a6c7d2a3c7d2a3af8790818bc7d0d2c3" class="btn-primary" onclick="trackMailtoClick()" style="display:inline-block; font-size:1.05rem; padding:1rem 2.5rem;">
-      ✉️ M'écrire un email
-    </a>
-    <p style="margin-top:1.2rem; font-size:0.82rem; color:var(--muted);">
-      Ouvre votre application mail avec un message pré-rempli
-    </p>
+    <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:2rem;">Decrivez-moi votre situation, votre metier et vos objectifs.<br/>Je vous reponds sous 24h.</p>
+    <a id="mailto-btn" href="#" class="btn-primary" onclick="trackMailtoClick()" style="display:inline-block;font-size:1.05rem;padding:1rem 2.5rem;">✉️ M'ecrire un email</a>
+    <p style="margin-top:1.2rem;font-size:0.82rem;color:var(--muted);">Ouvre votre application mail avec un message pre-rempli</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 <span>ProAvecIA</span> · Formateur IA en ligne · Tous droits réservés<a class="privacy-link" href="privacy.html">Politique de confidentialité</a></p>
+  <p>© 2026 <span>ProAvecIA</span> · Formateur IA en ligne · Tous droits reserves<a class="privacy-link" href="privacy.html">Politique de confidentialite</a></p>
 </footer>
 
-
-<!-- RGPD COOKIE BANNER -->
 <div id="cookie-banner">
-  <p>
-    Ce site utilise Google Analytics pour analyser le trafic et améliorer l'expérience utilisateur.
-    Vos données sont traitées conformément au RGPD.
-    <a href="privacy.html">Politique de confidentialité</a>
-  </p>
+  <p>Ce site utilise Google Analytics pour analyser le trafic et ameliorer l'experience utilisateur. Vos donnees sont traitees conformement au RGPD. <a href="privacy.html">En savoir plus</a></p>
   <div class="cookie-actions">
-    <button class="btn-accept" onclick="acceptCookies()">Accepter</button>
-    <button class="btn-refuse" onclick="refuseCookies()">Refuser</button>
+    <button class="btn-accept" id="btn-accept">Accepter</button>
+    <button class="btn-refuse" id="btn-refuse">Refuser</button>
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  const GA_ID = 'G-S13LFE4MDQ';
+<script>
+  var GA_ID = 'G-S13LFE4MDQ';
+  var u = 'davidakpovi';
+  var d = 'gmail.com';
+  var email = u + String.fromCharCode(64) + d;
 
-  /* ── Chargement GA4 après consentement ── */
+  // Build mailto links via JS to avoid Cloudflare obfuscation
+  function buildLinks() {
+    var base = 'mailto:' + email;
+    var body = 'Bonjour David,%0A%0AJe souhaite une formation personnalisee sur l\'IA.%0A%0AMon prenom : [...]%0AMon metier : [...]%0AMon objectif : [...]%0AMon niveau : [...]%0AMes disponibilites : [...]%0A%0AMerci !';
+
+    var mailBtn = document.getElementById('mailto-btn');
+    if (mailBtn) mailBtn.href = base + '?subject=Demande%20de%20formation%20IA%20%E2%80%94%20ProAvecIA&body=' + body;
+
+    var seance = document.getElementById('tarif-seance');
+    if (seance) seance.href = base + '?subject=Demande%20Seance%20unique%20(45%E2%82%AC%2Fh)%20%E2%80%94%20ProAvecIA&body=Bonjour%20David,%0A%0AJe%20souhaite%20reserver%20une%20seance%20unique%20a%2045%E2%82%AC/h.%0A%0AMon%20prenom%20:%20[...]%0AMon%20metier%20:%20[...]%0AMes%20disponibilites%20:%20[...]%0A%0AMerci%20!';
+
+    var pack5 = document.getElementById('tarif-5h');
+    if (pack5) pack5.href = base + '?subject=Demande%20Pack%205h%20(200%E2%82%AC)%20%E2%80%94%20ProAvecIA&body=Bonjour%20David,%0A%0AJe%20souhaite%20reserver%20le%20Pack%205h%20a%20200%E2%82%AC.%0A%0AMon%20prenom%20:%20[...]%0AMon%20metier%20:%20[...]%0AMes%20disponibilites%20:%20[...]%0A%0AMerci%20!';
+
+    var pack10 = document.getElementById('tarif-10h');
+    if (pack10) pack10.href = base + '?subject=Demande%20Pack%2010h%20(350%E2%82%AC)%20%E2%80%94%20ProAvecIA&body=Bonjour%20David,%0A%0AJe%20souhaite%20reserver%20le%20Pack%2010h%20a%20350%E2%82%AC.%0A%0AMon%20prenom%20:%20[...]%0AMon%20metier%20:%20[...]%0AMes%20disponibilites%20:%20[...]%0A%0AMerci%20!';
+  }
+
+  // GA4
   function loadGA() {
-    const s = document.createElement('script');
+    var s = document.createElement('script');
     s.async = true;
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
     document.head.appendChild(s);
     s.onload = function() {
       gtag('consent', 'update', { analytics_storage: 'granted' });
       gtag('config', GA_ID, { send_page_view: true });
-      bindScrollEvents(); // activer scroll tracking après chargement GA
+      bindScrollEvents();
     };
   }
 
-  /* ── Consentement ── */
-  function acceptCookies() {
-    localStorage.setItem('cookie_consent', 'accepted');
-    document.getElementById('cookie-banner').classList.add('hidden');
-    loadGA();
-  }
-
-  function refuseCookies() {
-    localStorage.setItem('cookie_consent', 'refused');
-    document.getElementById('cookie-banner').classList.add('hidden');
-  }
-
-
-  /* ══════════════════════════════════════
-     ÉVÉNEMENTS GA4
-  ══════════════════════════════════════ */
-
-  // Fonction générique
-  function trackEvent(eventName, label, section) {
+  function trackEvent(name, label, section) {
     if (typeof gtag === 'undefined') return;
-    gtag('event', eventName, {
-      event_label: label,
-      event_category: section
-    });
+    gtag('event', name, { event_label: label, event_category: section });
   }
 
-  // Clic sur le lien mailto
   function trackMailtoClick() {
-    trackEvent('cta_click', 'Écrire un email', 'Contact');
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'generate_lead', {
-        event_category: 'Contact',
-        event_label: 'mailto'
-      });
-    }
+    trackEvent('cta_click', 'Ecrire un email', 'Contact');
+    if (typeof gtag !== 'undefined') gtag('event', 'generate_lead', { event_category: 'Contact', event_label: 'mailto' });
   }
 
-  // Scroll : visibilité des sections clés
   function bindScrollEvents() {
-    const sections = [
-      { id: 'pourqui',        label: 'Pour qui' },
-      { id: 'services',       label: 'Services' },
-      { id: 'tarifs',         label: 'Tarifs' },
+    var sections = [
+      { id: 'pourqui', label: 'Pour qui' },
+      { id: 'services', label: 'Services' },
+      { id: 'tarifs', label: 'Tarifs' },
       { id: 'certifications', label: 'Certifications' },
-      { id: 'contact',        label: 'Contact' },
+      { id: 'contact', label: 'Contact' }
     ];
-    const seen = new Set();
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+    var seen = new Set();
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
         if (entry.isIntersecting && !seen.has(entry.target.id)) {
           seen.add(entry.target.id);
-          const sec = sections.find(s => s.id === entry.target.id);
+          var sec = sections.find(function(s) { return s.id === entry.target.id; });
           if (sec) trackEvent('section_view', sec.label, 'Scroll');
         }
       });
     }, { threshold: 0.4 });
-
-    sections.forEach(s => {
-      const el = document.getElementById(s.id);
+    sections.forEach(function(s) {
+      var el = document.getElementById(s.id);
       if (el) observer.observe(el);
     });
   }
 
-  // Temps passé sur la page (engagement)
-  let timeStart = Date.now();
-  window.addEventListener('beforeunload', function() {
-    const seconds = Math.round((Date.now() - timeStart) / 1000);
-    trackEvent('time_on_page', seconds + 's', 'Engagement');
+  // Hamburger menu
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('open');
+    this.classList.toggle('open');
+  });
+  document.querySelectorAll('#nav-menu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('nav-menu').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    });
   });
 
-  // Menu hamburger mobile
-  function toggleMenu() {
-    const menu = document.querySelector('nav ul');
-    const btn  = document.getElementById('hamburger');
-    menu.classList.toggle('open');
-    btn.classList.toggle('open');
-  }
-  // Fermer le menu au clic sur un lien
-  document.querySelectorAll('nav ul a').forEach(a => {
-    a.addEventListener('click', () => {
-      document.querySelector('nav ul').classList.remove('open');
-      document.getElemen
+  // Cookie consent
+  document.getElementById('btn-accept').addEventListener('click', function() {
+    localStorage.setItem('cookie_consent', 'accepted');
+    document.getElementById('cookie-banner').classList.add('hidden');
+    loadGA();
+  });
+
+  document.getElementById('btn-refuse').addEventListener('click', function() {
+    localStorage.setItem('cookie_consent', 'refused');
+    document.getElementById('cookie-banner').classList.add('hidden');
+  });
+
+  // Temps sur page
+  var timeStart = Date.now();
+  window.addEventListener('beforeunload', function() {
+    trackEvent('time_on_page', Math.round((Date.now() - timeStart) / 1000) + 's', 'Engagement');
+  });
+
+  // Init
+  window.addEventListener('DOMContentLoaded', function() {
+    buildLinks();
+    var consent = localStorage.getItem('cookie_consent');
+    if (consent === 'accepted') {
+      document.getElementById('cookie-banner').classList.add('hidden');
+      loadGA();
+    } else if (consent === 'refused') {
+      document.getElementById('cookie-banner').classList.add('hidden');
+    }
+  });
+</script>
+</body>
+</html>
